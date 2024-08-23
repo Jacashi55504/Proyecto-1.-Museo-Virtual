@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario - Museo Virtual de la Evolución de las Computadoras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Museo Virtual</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="generaciones.html">Generaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="glosario.html">Glosario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca-de.html">Acerca de</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="glossary container my-5">
+        <h2 class="text-center mb-4">Glosario de Términos Técnicos</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('cpu')">CPU (Unidad Central de Procesamiento)</a>
+                <p id="cpu" class="definition mt-2">La CPU, o Unidad Central de Procesamiento, es el cerebro de la computadora. Es responsable de ejecutar instrucciones y procesar datos. Está compuesta por la Unidad de Control, la Unidad Aritmético-Lógica (ALU) y los registros. Es esencial para el rendimiento de la computadora y coordina todas sus actividades.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('ram')">Memoria RAM (Memoria de Acceso Aleatorio)</a>
+                <p id="ram" class="definition mt-2">La RAM es una memoria volátil que almacena temporalmente los datos que la CPU necesita para realizar operaciones. Permite un acceso rápido a los datos, mejorando el rendimiento del sistema. Los datos en la RAM se pierden al apagar la computadora.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('rom')">Memoria ROM (Memoria de Solo Lectura)</a>
+                <p id="rom" class="definition mt-2">La ROM es una memoria no volátil que contiene datos permanentes que no se pueden modificar fácilmente. Generalmente, almacena el firmware de la computadora, que es esencial para el arranque del sistema. La información en la ROM se retiene incluso cuando la computadora está apagada.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('bus-datos')">Bus de Datos</a>
+                <p id="bus-datos" class="definition mt-2">El Bus de Datos es un sistema que permite la transferencia de datos entre los componentes de la computadora, como la CPU, la memoria y los dispositivos de entrada/salida. El ancho del bus de datos influye en la cantidad de datos que se pueden transferir simultáneamente.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('microprocesador')">Microprocesador</a>
+                <p id="microprocesador" class="definition mt-2">El microprocesador es un circuito integrado que contiene la CPU en un solo chip. Es responsable de ejecutar instrucciones y gestionar las operaciones de la computadora. Los microprocesadores modernos suelen tener múltiples núcleos, permitiendo la ejecución paralela de tareas.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('transistor')">Transistor</a>
+                <p id="transistor" class="definition mt-2">El transistor es un dispositivo semiconductor que puede amplificar o conmutar señales eléctricas. Es un componente clave en los circuitos integrados y reemplazó a los tubos de vacío, permitiendo la creación de computadoras más pequeñas y eficientes.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('circuito-integrado')">Circuito Integrado (IC)</a>
+                <p id="circuito-integrado" class="definition mt-2">Un Circuito Integrado es un conjunto de circuitos electrónicos miniaturizados en un chip de material semiconductor. Los ICs han permitido la miniaturización de la tecnología y han aumentado el rendimiento de las computadoras al integrar millones de transistores en un solo chip.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('tarjeta-madre')">Tarjeta Madre (Motherboard)</a>
+                <p id="tarjeta-madre" class="definition mt-2">La Tarjeta Madre es la placa principal de una computadora. Conecta y permite la comunicación entre todos los componentes, incluyendo la CPU, la RAM, los dispositivos de almacenamiento y los periféricos. También contiene el BIOS, que es esencial para el arranque del sistema.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('almacenamiento')">Almacenamiento</a>
+                <p id="almacenamiento" class="definition mt-2">El Almacenamiento se refiere a la capacidad de una computadora para guardar datos y programas de manera permanente o temporal. Los dispositivos de almacenamiento incluyen discos duros (HDD), unidades de estado sólido (SSD), y memorias flash.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('software')">Software</a>
+                <p id="software" class="definition mt-2">El Software es el conjunto de instrucciones que permite que el hardware de una computadora realice tareas específicas. Se divide en software de sistema, que incluye el sistema operativo, y software de aplicación, que incluye programas como procesadores de texto, navegadores web, y videojuegos.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('sistema-operativo')">Sistema Operativo (OS)</a>
+                <p id="sistema-operativo" class="definition mt-2">El Sistema Operativo es el software principal que gestiona el hardware de la computadora y proporciona servicios básicos a las aplicaciones. Controla los recursos del sistema, como la memoria y el almacenamiento, y permite que el usuario interactúe con la computadora.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('inteligencia-artificial')">Inteligencia Artificial (IA)</a>
+                <p id="inteligencia-artificial" class="definition mt-2">La Inteligencia Artificial es la simulación de procesos de inteligencia humana por parte de sistemas informáticos. Esto incluye el aprendizaje automático, la comprensión del lenguaje natural, la visión por computadora, y la toma de decisiones autónoma.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('redes')">Redes</a>
+                <p id="redes" class="definition mt-2">Las Redes permiten la interconexión de múltiples computadoras para compartir recursos e información. Pueden ser redes locales (LAN) o de área amplia (WAN), y son esenciales para la comunicación en la era digital.</p>
+            </li>
+            <li class="list-group-item">
+                <a href="#" onclick="toggleDefinition('nube')">Computación en la Nube (Cloud Computing)</a>
+                <p id="nube" class="definition mt-2">La Computación en la Nube es la entrega de servicios informáticos a través de internet. Esto incluye almacenamiento, bases de datos, servidores y software, permitiendo a los usuarios y empresas acceder a recursos desde cualquier lugar y en cualquier momento.</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Museo Virtual de la Evolución de las Computadoras</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrap.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
